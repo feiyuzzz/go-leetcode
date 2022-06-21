@@ -1,6 +1,11 @@
 package main
 
+import "github.com/feiyuzzz/go-leetcode/sort"
+
 func main() {
 	a := []int{3, 1, 4}
-	print(len(a))
+	sort.QuickSort(a)
+	for i := 0; i < len(a); i++ {
+		print(a[i])
+	}
 }
